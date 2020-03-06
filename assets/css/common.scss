@@ -1,0 +1,89 @@
+@import url(//cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+@import url(//fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean);
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:300,400,600&display=swap');
+@import url(//cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, etails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+	margin: 0; padding: 0; border: 0; vertical-align: baseline; font-family: inherit;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+$md: "768px";
+$lg: "992px";
+$xl: "1200px";
+
+@mixin transition($property: all, $duration: .15s, $timing: linear, $delay: 0s) {
+	-webkit-transition-property: $property;
+    transition-property: $property;
+	-webkit-transition-duration: $duration;
+    transition-duration: $duration;
+	-webkit-transition-timing-function: $timing;
+    transition-timing-function: $timing;
+	-webkit-transition-delay: $delay;
+    transition-delay: $delay;
+}
+
+@mixin noto() {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+@mixin noto-serif() {
+    font-family: 'Noto Serif KR', serif;
+}
+@mixin nns() {
+    font-family: 'NanumSquare', sans-serif;
+}
+@mixin gotham() {
+    font-family: 'GothamPro';
+}
+
+body {
+    position: relative;
+    min-width: 320px;
+    width: 100%;
+    font-size: 13px;
+    color: #000;
+    @include noto();
+    box-sizing: border-box;
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.container-fluid {
+    width: 100%;
+    display: block;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+input, select, textarea {
+    font-family: inherit;
+    outline: none !important;
+}
+a, button {
+    color: #333;
+    cursor: pointer;
+    background: none;
+    border: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    &:hover {
+        color: #666;
+    }
+}
