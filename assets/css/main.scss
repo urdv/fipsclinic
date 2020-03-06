@@ -413,90 +413,103 @@
             .bx-viewport {
                 .rank-list {
                     li {
-                        display: inline-block;
-                        .figure {
-                            img {
-                                display: block;
-                                width: 100%;
-                            }
-                        }
-                        .details {
-                            position: relative;
-                            top: -35px;
-                            text-align: center;
-                            padding-top: 90px;
-                            .rank-num {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                text-align: center;
-                                > img {
-                                    max-width: 100%;
-                                    display: inline-block;
-                                }
-                            }
-                            > dl {
-                                > dt {
-                                    font-size: 24px;
-                                    color: #000;
-                                    letter-spacing: -1px;
-                                    font-weight: bold;
-                                }
-                                > dd {
-                                    font-size: 18px;
-                                    color: #606060;
-                                    font-weight: 300;
-                                    margin-top: 20px;
-                                }
-                            }
-                            > .btn-more {
-                                position: relative;
+                        > a {
+                            display: block;
+                            .figure {
                                 overflow: hidden;
-                                display: block;
-                                width: 130px;
-                                height: 40px;
-                                font-size: 14px;
-                                color: #000;
-                                line-height: 34px;
-                                text-align: left;
-                                padding: 0 20px;
-                                margin: 30px auto 0;
-                                border-radius: 30px;
-                                border: 2px solid #e0e0e0;
-                                @include transition();
-                                &:before {
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                    @include transition();
+                                }
+                            }
+                            .details {
+                                position: relative;
+                                top: -35px;
+                                text-align: center;
+                                padding-top: 90px;
+                                .rank-num {
                                     position: absolute;
                                     top: 0;
-                                    right: 0;
-                                    width: 0;
-                                    height: 100%;
+                                    left: 0;
+                                    width: 100%;
+                                    text-align: center;
+                                    > img {
+                                        max-width: 100%;
+                                        display: inline-block;
+                                    }
+                                }
+                                > dl {
+                                    > dt {
+                                        font-size: 24px;
+                                        color: #000;
+                                        letter-spacing: -1px;
+                                        font-weight: bold;
+                                    }
+                                    > dd {
+                                        font-size: 18px;
+                                        color: #606060;
+                                        font-weight: 300;
+                                        margin-top: 20px;
+                                    }
+                                }
+                                > .more {
+                                    position: relative;
+                                    overflow: hidden;
                                     display: block;
-                                    z-index: -1;
-                                    content: '';
-                                    background-color: #ae9483;
-                                    @include transition($duration: .2s);
-                                }
-                                &:after {
-                                    display: inline-block;
-                                    float: right;
-                                    content: '';
-                                    width: 6px;
-                                    height: 36px;
-                                    background-image: url(/assets/images/main/btn_more.png);
-                                    background-repeat: no-repeat;
-                                    background-position: 0 50%;
-                                    background-size: 6px auto;
-                                    @include transition($delay: .1s);
-                                }
-                                &:hover {
-                                    color: #fff;
+                                    width: 130px;
+                                    height: 40px;
+                                    font-size: 14px;
+                                    color: #000;
+                                    line-height: 34px;
+                                    text-align: left;
+                                    padding: 0 20px;
+                                    margin: 30px auto 0;
+                                    border-radius: 30px;
+                                    border: 2px solid #e0e0e0;
+                                    @include transition();
                                     &:before {
-                                        width: 100%;
-                                        left: 0;
+                                        position: absolute;
+                                        top: 0;
+                                        right: 0;
+                                        width: 0;
+                                        height: 100%;
+                                        display: block;
+                                        z-index: -1;
+                                        content: '';
+                                        background-color: #ef4c8d;
+                                        @include transition($duration: .2s);
                                     }
                                     &:after {
-                                        background-image: url(/assets/images/main/btn_more_active.png);
+                                        display: inline-block;
+                                        float: right;
+                                        content: '';
+                                        width: 6px;
+                                        height: 36px;
+                                        background-image: url(/assets/images/main/btn_more.png);
+                                        background-repeat: no-repeat;
+                                        background-position: 0 50%;
+                                        background-size: 6px auto;
+                                        @include transition($delay: .1s);
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .figure {
+                                    img {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                .details {
+                                    .more {
+                                        color: #fff;
+                                        &:before {
+                                            width: 100%;
+                                            left: 0;
+                                        }
+                                        &:after {
+                                            background-image: url(/assets/images/main/btn_more_active.png);
+                                        }
                                     }
                                 }
                             }

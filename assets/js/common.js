@@ -71,7 +71,7 @@
             $('.quick-top .btn-top').click(function(){
                 $('html, body').stop().animate({
                     scrollTop: 0
-                });
+                }, 'slow');
             });
             // aside quick-menu
             $('#quick-menu').stop().animate({

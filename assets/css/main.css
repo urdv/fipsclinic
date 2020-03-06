@@ -469,36 +469,46 @@ a, button {
 /* focus-pick */
 .focus-pick .section-content .bx-wrapper {
   position: relative; }
-  .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li {
-    display: inline-block; }
-    .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .figure img {
-      display: block;
-      width: 100%; }
-    .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details {
+  .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a {
+    display: block; }
+    .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .figure {
+      overflow: hidden; }
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .figure img {
+        display: block;
+        width: 100%;
+        -webkit-transition-property: all;
+        transition-property: all;
+        -webkit-transition-duration: 0.15s;
+        transition-duration: 0.15s;
+        -webkit-transition-timing-function: linear;
+        transition-timing-function: linear;
+        -webkit-transition-delay: 0s;
+        transition-delay: 0s; }
+    .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details {
       position: relative;
       top: -35px;
       text-align: center;
       padding-top: 90px; }
-      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details .rank-num {
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details .rank-num {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         text-align: center; }
-        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details .rank-num > img {
+        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details .rank-num > img {
           max-width: 100%;
           display: inline-block; }
-      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > dl > dt {
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details > dl > dt {
         font-size: 24px;
         color: #000;
         letter-spacing: -1px;
         font-weight: bold; }
-      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > dl > dd {
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details > dl > dd {
         font-size: 18px;
         color: #606060;
         font-weight: 300;
         margin-top: 20px; }
-      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > .btn-more {
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details > .more {
         position: relative;
         overflow: hidden;
         display: block;
@@ -520,7 +530,7 @@ a, button {
         transition-timing-function: linear;
         -webkit-transition-delay: 0s;
         transition-delay: 0s; }
-        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > .btn-more:before {
+        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details > .more:before {
           position: absolute;
           top: 0;
           right: 0;
@@ -529,7 +539,7 @@ a, button {
           display: block;
           z-index: -1;
           content: '';
-          background-color: #ae9483;
+          background-color: #ef4c8d;
           -webkit-transition-property: all;
           transition-property: all;
           -webkit-transition-duration: 0.2s;
@@ -538,7 +548,7 @@ a, button {
           transition-timing-function: linear;
           -webkit-transition-delay: 0s;
           transition-delay: 0s; }
-        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > .btn-more:after {
+        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a .details > .more:after {
           display: inline-block;
           float: right;
           content: '';
@@ -556,13 +566,15 @@ a, button {
           transition-timing-function: linear;
           -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s; }
-        .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > .btn-more:hover {
-          color: #fff; }
-          .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > .btn-more:hover:before {
-            width: 100%;
-            left: 0; }
-          .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li .details > .btn-more:hover:after {
-            background-image: url(/assets/images/main/btn_more_active.png); }
+    .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a:hover .figure img {
+      transform: scale(1.2); }
+    .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a:hover .details .more {
+      color: #fff; }
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a:hover .details .more:before {
+        width: 100%;
+        left: 0; }
+      .focus-pick .section-content .bx-wrapper .bx-viewport .rank-list li > a:hover .details .more:after {
+        background-image: url(/assets/images/main/btn_more_active.png); }
   .focus-pick .section-content .bx-wrapper .bx-controls .bx-controls-direction > a {
     position: absolute;
     top: 133px;

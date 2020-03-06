@@ -84,64 +84,72 @@
                 <div class="section-content">
                     <ul class="rank-list">
                         <li>
-                            <div class="figure">
-                                <img src="/assets/images/main/img_rank_slider01.jpg" alt="눈매교정">
-                            </div>
-                            <div class="details">
-                                <p class="rank-num">
-                                    <img src="/assets/images/main/img_rank_num01.png" alt="01">
-                                </p>
-                                <dl>
-                                    <dt>눈매교정</dt>
-                                    <dd>또렷하고 선명한 눈매의 완성</dd>
-                                </dl>
-                                <a href="#" class="btn-more" role="button">자세히 보기</a>
-                            </div>
+                            <a href="#">
+                                <div class="figure">
+                                    <img src="/assets/images/main/img_rank_slider01.jpg" alt="눈매교정">
+                                </div>
+                                <div class="details">
+                                    <p class="rank-num">
+                                        <img src="/assets/images/main/img_rank_num01.png" alt="01">
+                                    </p>
+                                    <dl>
+                                        <dt>눈매교정</dt>
+                                        <dd>또렷하고 선명한 눈매의 완성</dd>
+                                    </dl>
+                                    <p class="more">자세히 보기</p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="figure">
-                                <img src="/assets/images/main/img_rank_slider02.jpg" alt="트임">
-                            </div>
-                            <div class="details">
-                                <p class="rank-num">
-                                    <img src="/assets/images/main/img_rank_num02.png" alt="02">
-                                </p>
-                                <dl>
-                                    <dt>트임</dt>
-                                    <dd>눈 모양과 크기를 한 번에 개선<i>!</i></dd>
-                                </dl>
-                                <a href="#" class="btn-more" role="button">자세히 보기</a>
-                            </div>
+                            <a href="#">
+                                <div class="figure">
+                                    <img src="/assets/images/main/img_rank_slider02.jpg" alt="트임">
+                                </div>
+                                <div class="details">
+                                    <p class="rank-num">
+                                        <img src="/assets/images/main/img_rank_num02.png" alt="02">
+                                    </p>
+                                    <dl>
+                                        <dt>트임</dt>
+                                        <dd>눈 모양과 크기를 한 번에 개선<i>!</i></dd>
+                                    </dl>
+                                    <p class="more">자세히 보기</p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="figure">
-                                <img src="/assets/images/main/img_rank_slider03.jpg" alt="상안검/하안검">
-                            </div>
-                            <div class="details">
-                                <p class="rank-num">
-                                    <img src="/assets/images/main/img_rank_num03.png" alt="03">
-                                </p>
-                                <dl>
-                                    <dt>상안검/하안검</dt>
-                                    <dd>변함 없이 어린 눈매를 위하여</dd>
-                                </dl>
-                                <a href="#" class="btn-more" role="button">자세히 보기</a>
-                            </div>
+                            <a href="#">
+                                <div class="figure">
+                                    <img src="/assets/images/main/img_rank_slider03.jpg" alt="상안검/하안검">
+                                </div>
+                                <div class="details">
+                                    <p class="rank-num">
+                                        <img src="/assets/images/main/img_rank_num03.png" alt="03">
+                                    </p>
+                                    <dl>
+                                        <dt>상안검/하안검</dt>
+                                        <dd>변함 없이 어린 눈매를 위하여</dd>
+                                    </dl>
+                                    <p class="more">자세히 보기</p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div class="figure">
-                                <img src="/assets/images/main/img_rank_slider04.jpg" alt="민트실리프팅">
-                            </div>
-                            <div class="details">
-                                <p class="rank-num">
-                                    <img src="/assets/images/main/img_rank_num04.png" alt="04">
-                                </p>
-                                <dl>
-                                    <dt>민트실리프팅</dt>
-                                    <dd>더 강력하고 오래 가는 리프팅!</dd>
-                                </dl>
-                                <a href="#" class="btn-more" role="button">자세히 보기</a>
-                            </div>
+                            <a href="#">
+                                <div class="figure">
+                                    <img src="/assets/images/main/img_rank_slider04.jpg" alt="민트실리프팅">
+                                </div>
+                                <div class="details">
+                                    <p class="rank-num">
+                                        <img src="/assets/images/main/img_rank_num04.png" alt="04">
+                                    </p>
+                                    <dl>
+                                        <dt>민트실리프팅</dt>
+                                        <dd>더 강력하고 오래 가는 리프팅!</dd>
+                                    </dl>
+                                    <p class="more">자세히 보기</p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
