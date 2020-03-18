@@ -12,7 +12,7 @@ ol, ul {list-style: none;}
 table {border-collapse: collapse; border-spacing: 0;}
 
 $md: "768px";
-$lg: "992px";
+$lg: "1024px";
 $xl: "1200px";
 
 @mixin transition($property: all, $duration: .15s, $timing: linear, $delay: 0s) {

@@ -17,25 +17,30 @@
     });
 
     // gnb 메뉴 관련
-    $(document).on('mouseenter', '.gnb-menu > li > a', function(){
-        $('.gnb-menu > li').removeClass('active');
-        $(this).parent().addClass('active');
+    $(document).on('mouseenter', '#gnb .depth1 > li > a', function(){
+        $('.gnb-menu > li').removeClass('menu_over');
+        $(this).parent().addClass('menu_over');
     });
-    $(document).on('mouseleave', '.gnb-menu > li', function(){
-        $(this).removeClass('active');
+    $(document).on('mouseleave', '#gnb .depth1 > li', function(){
+        $(this).removeClass('menu_over');
     });
 
     // site map 관련
-    $(document).on('click', '#gnb .btn-site-map', function(){
-        $(this).toggleClass('btn-map-close');
+    $(document).on('click', '.btn-site-map', function(){
+        $('.btn-site-map').toggleClass('btn-map-close');
         $('body').toggleClass('opened');
     });
 
     // 언어 선택 관련
-    $(document).on('mouseenter', '.global-language .btn-language', function(){
+    // 모바일
+    $(document).on('click', '#site-map .global-language .btn-language', function(){
+        $(this).parent().toggleClass('show');
+    });
+    // 웹
+    $(document).on('mouseenter', '#header .global-language .btn-language', function(){
         $(this).parent().addClass('show');
     });
-    $(document).on('mouseleave', '.global-language', function(){
+    $(document).on('mouseleave', '#header .global-language', function(){
         $(this).removeClass('show');
     });
 
