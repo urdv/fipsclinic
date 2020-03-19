@@ -58,10 +58,9 @@
     });
 
     // modal tab 관련
-    $(document).on('click','.tab-menu li a', function(e){
-        var index =  $(this).parent().index();
-        $('.tab-menu li a').parent().removeClass('active');
-        $('.tab-pane').removeClass('active');
+    $(document).on('click','.modal-wrapper .tab-menu li a', function(e){
+        $('.modal-wrapper .tab-menu li a').parent().removeClass('active');
+        $('.modal-wrapper .tab-content .tab-pane').removeClass('active');
         $(this).parent().addClass('active');
         $($(this).attr('href')).addClass('active');
         e.preventDefault();

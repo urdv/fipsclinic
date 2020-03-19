@@ -1,7 +1,5 @@
-@import url(//cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
 @import url(//fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap&subset=korean);
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR:300,400,600&display=swap");
-@import url(//cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, etails, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
   margin: 0;
   padding: 0;
@@ -498,6 +496,7 @@ a, button {
   @media (min-width: 1200px) {
     #header #gnb {
       width: 1200px;
+      height: 80px;
       margin: 0 auto; }
       #header #gnb .depth1 {
         padding: 0 40px 0 90px; }

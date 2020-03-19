@@ -1,0 +1,567 @@
+@import 'common';
+
+.before-after {
+    padding: 100px 0 110px;
+    background-image: url(/assets/images/sub/bg_before&after.jpg);
+    .section-header {
+        text-align: center;
+        > h3 {
+            display: inline-block;
+            img {
+                max-width: 100%;
+            }
+        }
+        > hr {
+            display: block;
+            width: 80px;
+            margin: 30px auto 50px;
+            border-top: 2px solid #c8c8c8;
+        }
+    }
+    .section-content {
+        .angle-content {
+            .tab-pane {
+                overflow: hidden;
+                height: 0;
+                &.active {
+                    height: auto;
+                }
+            }
+        }
+        .facial-angle {
+            .angle-content {
+                .tab-pane {
+                    > ul {
+                        font-size: 0;
+                        > li {
+                            display: inline-block;
+                            > a {
+                                position: relative;
+                                display: block;
+                                overflow: hidden;
+                                img {
+                                    display: block;
+                                    max-width: 100%;
+                                }
+                                p {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 14px;
+                                    line-height: 18px;
+                                    font-weight: 300;
+                                    text-align: center;
+                                    color: #fff;
+                                    padding-top: 110px;
+                                    @include transition();
+                                    opacity: 0;
+                                    background-color: rgba(#3f3f3f, .9);
+                                    background-image: url(/assets/images/sub/ico_lock.png);
+                                    background-size: 40px auto;
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 40px;
+                                }
+                                &:hover {
+                                    p {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .angle-tab {
+            margin: 40px 0;
+            > ul {
+                display: table;
+                width: 504px;
+                margin: 0 auto;
+                table-layout: fixed;
+                > li {
+                    display: table-cell;
+                    width: 1%;
+                    text-align: center;
+                    border-right: 1px solid #e4e4e4;
+                    &:last-child {
+                        border-right: 0;
+                    }
+                    > a {
+                        display: block;
+                        font-size: 16px;
+                        color: #858585;
+                        font-weight: 400;
+                        line-height: 50px;
+                        background-color: #fff;
+                        @include transition();
+                        &:hover {
+                            opacity: .7;
+                            color: #fff;
+                            background-color: #ff739f;
+                        }
+                    }
+                    &.active {
+                        > a {
+                            color: #fff;
+                            background-color: #ff739f;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .slider-area {
+            > .tab-pane {
+                > .slider {
+                    position: relative;
+                    width: 920px;
+                    margin: 0 auto;
+                    display: block;
+                    padding-bottom: 60px;
+                    > ul {
+                        .slick-arrow {
+                            position: absolute;
+                            top: 50%;
+                            z-index: 1;
+                            width: 34px;
+                            height: 67px;
+                            font-size: 0;
+                            text-indent: -999999px;
+                            display: block;
+                            background-repeat: no-repeat;
+                            background-position: 0 0;
+                            background-size: 34px auto;
+                            @include transition();
+                            &:hover {
+                                opacity: .6;
+                            }
+                            &.slick-prev {
+                                left: -90px;
+                                background-image: url(/assets/images/sub/btn_slick_prev.png);
+                            }
+                            &.slick-next {
+                                right: -90px;
+                                background-image: url(/assets/images/sub/btn_slick_next.png);
+                            }
+                        }
+                        .slick-list {
+                            .slick-track {
+                                > li {
+                                    outline: none !important;
+                                    font-size: 0;
+                                    .before {
+                                        position: relative;
+                                        display: inline-block;
+                                        img {
+                                            max-width: 100%;
+                                        }
+                                        .login-box {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            width: 100%;
+                                            height: 100%;
+                                            display: table;
+                                            table-layout: fixed;
+                                            background-color: rgba(#3f3f3f, .9);
+                                            .v-align {
+                                                display: table-cell;
+                                                text-align: center;
+                                                vertical-align: middle;
+                                                > p {
+                                                    font-size: 16px;
+                                                    line-height: 24px;
+                                                    color: #fff; 
+                                                    font-weight: 400;
+                                                    padding-top: 92px;
+                                                    background-image: url(/assets/images/sub/ico_lock.png);
+                                                    background-size: 52px auto;
+                                                    background-repeat: no-repeat;
+                                                    background-position: 50% 0;
+                                                }
+                                                > a {
+                                                    display: block;
+                                                    width: 160px;
+                                                    line-height: 50px;
+                                                    color: #fff;
+                                                    font-size: 18px;
+                                                    font-weight: 400;
+                                                    margin: 35px auto 0;
+                                                    border-radius: 30px;
+                                                    background-color: #ff739f;
+                                                    @include transition();
+                                                    &:hover {
+                                                        background-color: #cd2034;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .after {
+                                        display: inline-block;
+                                        img {
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    > .details {
+                        font-size: 24px;
+                        font-weight: 400;
+                        color: #000;
+                        text-align: center;
+                        line-height: 64px;
+                        background-color: #fff;
+                    }
+                }
+            }
+        }
+        .slider-page {
+            padding-top: 40px;
+            border-top: 1px solid #a3a3a3;
+            > ul {
+                margin: 0 -7px;
+                > .slick-list {
+                    > .slick-track {
+                        > li {
+                            cursor: pointer;
+                            text-align: center;
+                            padding: 0 7px;
+                            outline: none !important;
+                            .img-area {
+                                position: relative;
+                                width: 100%;
+                                font-size: 0;
+                                &:after {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    content: '';
+                                    display: block;
+                                    opacity: 0;
+                                    border: 3px solid #ff739f;
+                                    @include transition();
+                                }
+                                > div {
+                                    display: inline-block;
+                                    img {
+                                        width: 100%;
+                                    }
+                                    &.before {
+                                        position: relative;
+                                        > a {
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            background-color: rgba(#3f3f3f, .9);
+                                            background-image: url(/assets/images/sub/ico_lock.png);
+                                            background-size: 40px auto;
+                                            background-repeat: no-repeat;
+                                            background-position: 50% 50%;
+                                        }
+                                    }
+                                }
+                            }
+                            > .details {
+                                font-size: 18px;
+                                color: #000;
+                                font-weight: 400;
+                                margin-top: 20px;
+                            }
+                            &.slick-current.slick-active {
+                                .img-area {
+                                    &:after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pagenation {
+    margin-top: 60px;
+    > ul {
+        text-align: center;
+        font-size: 0;
+        > li {
+            display: inline-block;
+            vertical-align: middle;
+            > a {
+                display: inline-block;
+                font-size: 14px;
+                color: #000;
+                line-height: 28px;
+                font-weight: 400;
+                @include transition();
+                &:hover {
+                    opacity: .7;
+                    color: #ff739f;
+                }
+            }
+            &:after {
+                position: relative;
+                top: 5px;
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 20px;
+                margin: 0 20px;
+                background-color: #cbcbcb;
+            }
+            &:nth-of-type(11) {
+                &:after {
+                    display: none;
+                }
+            }
+            &.prev, &.next {
+                > a {
+                    width: 28px;
+                    height: 28px;
+                    border-radius: 50%;
+                    background-repeat: no-repeat;
+                    background-position: 50% 50%;
+                    background-color: #fff;
+                    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+                    &:hover {
+                        opacity: .8;
+                    }
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            &.prev {
+                margin-right: 35px;
+                > a {
+                    background-image: url(/assets/images/sub/ico_paging_prev.png);
+                }
+            }
+            &.next {
+                margin-left: 35px;
+                > a {
+                    background-image: url(/assets/images/sub/ico_paging_next.png);
+                }
+            }
+            &.active {
+                > a {
+                    color: #ff739f;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// foot-banner
+.promote-banner {
+    padding: 50px 0;
+    .container {
+        > ul {
+            overflow: hidden;
+            margin: 0 -10px;
+            > li {
+                float: left;
+                width: 33.3333%;
+                padding: 0 10px;
+                > a {
+                    display: block;
+                    > figure {
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.special {
+    position: relative;
+    height: 600px;
+    .section-header {
+        width: 385px;
+        height: 600px;
+        background-color: #fff;
+        > figure {
+            padding: 38px 0;
+            > img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        }
+        .special-tab-menu {
+            > ul {
+                border-top: 1px solid #8a8a8a;
+                > li {
+                    border-bottom: 1px solid #8a8a8a;
+                    > a {
+                        display: block;
+                        font-size: 22px;
+                        color: #555c68;
+                        font-weight: 400;
+                        padding: 0 30px;
+                        line-height: 76px;
+                        @include transition();
+                        &:hover {
+                            opacity: .7;
+                            color: #fff;
+                            background-color: #ff739f;
+                        }
+                        &:after {
+                            display: inline-block;
+                            width: 9px;
+                            height: 76px;
+                            float: right;
+                            content: '';
+                            opacity: 0;
+                            background-image: url(/assets/images/sub/ico_active_tab.jpg);
+                            background-position: 0 50%;
+                            background-size: 9px auto;
+                            background-repeat: no-repeat;
+                        }
+                    }
+                    &.active {
+                        > a {
+                            color: #fff;
+                            background-color: #ff739f;
+                            &:after {
+                                opacity: 1;
+                            }
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        .tab-content {
+            .special-tab-pane {
+                width: 100%;
+                height: 600px;
+                display: none;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                background-size: cover;
+                .container {
+                    display: table;
+                    padding-left: 385px;
+                    height: 600px;
+                    > figure {
+                        display: table-cell;
+                        padding-left: 80px;
+                        vertical-align: middle;
+                        > img {
+                            display: block;
+                        }
+                    }
+                }
+                &.active {
+                    display: block;
+                }
+            }
+            #special-1 {
+                background-image: url(/assets/images/sub/bg_special_content01.jpg);
+            }
+            #special-2 {
+                background-image: url(/assets/images/sub/bg_special_content02.jpg);
+            }
+            #special-3 {
+                background-image: url(/assets/images/sub/bg_special_content03.jpg);
+            }
+            #special-4 {
+                background-image: url(/assets/images/sub/bg_special_content04.jpg);
+            }
+            #special-5 {
+                background-image: url(/assets/images/sub/bg_special_content05.jpg);
+            }
+        }
+    }
+}
+
+.attention {
+    padding: 50px 0;
+    .container {
+        > p {
+            display: block;
+            margin: 0 auto;
+            width: 1020px;
+            font-size: 18px;
+            letter-spacing: -1px;
+            color: #fff;
+            line-height: 48px;
+            font-weight: 400;
+            text-align: center;
+            border-radius: 30px;
+            border: 4px solid #fab9ce;
+            background-color: #ff739f;
+        }
+    }
+}
+
+.slider-for {
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+    li {
+        width: 600px;
+        height: 500px;
+        display: block;
+    }
+}
+.slider-nav {
+    li {
+        position: relative;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+        background-color: #fff;
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            display: block;
+            @include transition();
+            opacity: 0;
+            border: 3px solid orange;
+        }
+        &.slick-active.slick-current {
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -584,7 +584,7 @@
                         }
                         > dd {
                             font-size: 16px;
-                            font-weight: 300;
+                            font-weight: 400;
                             line-height: 24px;
                             color: rgba(#000, .7);
                             margin-top: 15px;
@@ -1093,9 +1093,9 @@
                             }
                         }
                     }
-                    .attention {
+                    /*.attention {
                         margin-top: 10px;
-                    }
+                    }*/
                 }
             }
             &.contact {
@@ -1128,7 +1128,7 @@
                                     margin-bottom: 6px;
                                 }
                                 > dd {
-                                    font-size: 36px;
+                                    font-size: 30px;
                                     font-weight: lighter;
                                     letter-spacing: -1px;
                                     b {
@@ -1162,7 +1162,7 @@
                         }
                     }
                     .attention {
-                        margin-top: 24px;
+                        margin-top: 26px;
                     }
                 }
             }
