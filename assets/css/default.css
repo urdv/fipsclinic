@@ -303,8 +303,6 @@ a, button {
               -webkit-transition-delay: 0s;
               transition-delay: 0s;
               background-color: rgba(29, 13, 15, 0.8); }
-              #header #gnb .depth1 > li > div > .bg-content {
-                display: none; }
               #header #gnb .depth1 > li > div > ul {
                 overflow: hidden;
                 width: 100%;
@@ -502,16 +500,16 @@ a, button {
         padding: 0 40px 0 90px; }
         #header #gnb .depth1 > li {
           padding: 0px 30px; }
-          #header #gnb .depth1 > li > div > .bg-content {
+          #header #gnb .depth1 > li > div:after {
             display: block;
             position: absolute;
             top: 0;
             left: 50%;
-            width: 1200px;
+            content: '';
+            width: 1300px;
             height: 100%;
-            margin-left: -600px;
+            margin-left: -650px;
             overflow: hidden;
-            background-image: url(/assets/images/gnb_bg_content.png);
             background-repeat: no-repeat;
             background-size: auto 200px;
             background-position: 100% 0; }
@@ -530,7 +528,25 @@ a, button {
               #header #gnb .depth1 > li > div > ul > li:nth-of-type(3) ~ li > a {
                 margin-top: 10px; }
           #header #gnb .depth1 > li.menu_over > div {
-            height: 200px; } }
+            height: 200px; }
+          #header #gnb .depth1 > li:nth-of-type(1) > div:after {
+            background-image: url(/assets/images/gnb_bg_content01.png); }
+          #header #gnb .depth1 > li:nth-of-type(2) > div:after {
+            background-image: url(/assets/images/gnb_bg_content02.png); }
+          #header #gnb .depth1 > li:nth-of-type(3) > div:after {
+            background-image: url(/assets/images/gnb_bg_content03.png); }
+          #header #gnb .depth1 > li:nth-of-type(4) > div:after {
+            background-image: url(/assets/images/gnb_bg_content04.png); }
+          #header #gnb .depth1 > li:nth-of-type(5) > div:after {
+            background-image: url(/assets/images/gnb_bg_content05.png); }
+          #header #gnb .depth1 > li:nth-of-type(6) > div:after {
+            background-image: url(/assets/images/gnb_bg_content06.png); }
+          #header #gnb .depth1 > li:nth-of-type(7) > div:after {
+            background-image: url(/assets/images/gnb_bg_content07.png); }
+          #header #gnb .depth1 > li:nth-of-type(8) > div:after {
+            background-image: url(/assets/images/gnb_bg_content08.png); }
+          #header #gnb .depth1 > li:nth-of-type(9) > div:after {
+            background-image: url(/assets/images/gnb_bg_content09.png); } }
   @media (min-width: 1840px) {
     #header {
       height: 80px; }

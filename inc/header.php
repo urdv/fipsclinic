@@ -35,7 +35,6 @@
             <li>
                 <a href="#">눈성형</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -51,7 +50,6 @@
             <li>
                 <a href="#">코성형</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -67,7 +65,6 @@
             <li>
                 <a href="#">윤곽성형</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -83,7 +80,6 @@
             <li>
                 <a href="#">체형성형</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -99,7 +95,6 @@
             <li>
                 <a href="#">지방이식</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -115,7 +110,6 @@
             <li>
                 <a href="#">V라인클리닉</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -131,7 +125,6 @@
             <li>
                 <a href="#">피부클리닉</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -147,7 +140,6 @@
             <li>
                 <a href="#">이벤트</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>
@@ -163,7 +155,6 @@
             <li>
                 <a href="#">미디어</a>
                 <div>
-                    <div class="bg-content"></div>
                     <ul>
                         <li><a href="#">쌍꺼풀</a></li>
                         <li><a href="#">눈매교정</a></li>

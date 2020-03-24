@@ -8,7 +8,7 @@
             auto: true,
             pause: 6000,
             touchEnabled: true,
-            controls: false,
+            controls: true,
             pager: true,
             onSlideAfter: function(currentSlideNumber, totalSlideQty, currentSlideHtmlObject) {
                 $('.jumbotron ul li.active').removeClass('active');

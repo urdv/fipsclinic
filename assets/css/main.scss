@@ -342,12 +342,36 @@
             }
         }
         .bx-controls {
-            position: absolute;
-            bottom: 40px;
-            left: 0;
-            width: 100%;
-            text-align: center;
+            .bx-controls-direction {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 1354px;
+                margin: -35.5px 0 0 -677px;
+                > a {
+                    width: 37px;
+                    height: 71px;
+                    font-size: 0;
+                    text-indent: -99999px;
+                    background-repeat: no-repeat;
+                    background-position: 0 0;
+                    background-size: 37px 71px;
+                    &.bx-prev {
+                        float: left;
+                        background-image: url(/assets/images/main/btn_bx_prev.png);
+                    }
+                    &.bx-next {
+                        float: right;
+                        background-image: url(/assets/images/main/btn_bx_next.png);
+                    }
+                }
+            }
             .bx-pager {
+                position: absolute;
+                bottom: 40px;
+                left: 0;
+                width: 100%;
+                text-align: center;
                 font-size: 0;
                 .bx-pager-item {
                     display: inline-block;

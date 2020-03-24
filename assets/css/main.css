@@ -405,35 +405,54 @@ a, button {
       .jumbotron .bx-wrapper .bx-viewport > ul > li.fourth.active .container .slide-content .v-align p.txt-4 {
         top: 0;
         opacity: 1; }
-    .jumbotron .bx-wrapper .bx-controls {
+    .jumbotron .bx-wrapper .bx-controls .bx-controls-direction {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1354px;
+      margin: -35.5px 0 0 -677px; }
+      .jumbotron .bx-wrapper .bx-controls .bx-controls-direction > a {
+        width: 37px;
+        height: 71px;
+        font-size: 0;
+        text-indent: -99999px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 37px 71px; }
+        .jumbotron .bx-wrapper .bx-controls .bx-controls-direction > a.bx-prev {
+          float: left;
+          background-image: url(/assets/images/main/btn_bx_prev.png); }
+        .jumbotron .bx-wrapper .bx-controls .bx-controls-direction > a.bx-next {
+          float: right;
+          background-image: url(/assets/images/main/btn_bx_next.png); }
+    .jumbotron .bx-wrapper .bx-controls .bx-pager {
       position: absolute;
       bottom: 40px;
       left: 0;
       width: 100%;
-      text-align: center; }
-      .jumbotron .bx-wrapper .bx-controls .bx-pager {
-        font-size: 0; }
-        .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
-          display: inline-block; }
-          .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item > a {
-            display: block;
-            width: 16px;
-            font-size: 0;
-            text-indent: -9999px;
-            height: 16px;
-            margin: 0 5px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.5);
-            -webkit-transition-property: all;
-            transition-property: all;
-            -webkit-transition-duration: 0.15s;
-            transition-duration: 0.15s;
-            -webkit-transition-timing-function: linear;
-            transition-timing-function: linear;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s; }
-            .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item > a.active {
-              background-color: #ff739f; }
+      text-align: center;
+      font-size: 0; }
+      .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item {
+        display: inline-block; }
+        .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item > a {
+          display: block;
+          width: 16px;
+          font-size: 0;
+          text-indent: -9999px;
+          height: 16px;
+          margin: 0 5px;
+          border-radius: 50%;
+          background-color: rgba(255, 255, 255, 0.5);
+          -webkit-transition-property: all;
+          transition-property: all;
+          -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+          -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+          -webkit-transition-delay: 0s;
+          transition-delay: 0s; }
+          .jumbotron .bx-wrapper .bx-controls .bx-pager .bx-pager-item > a.active {
+            background-color: #ff739f; }
 
 /* common */
 .section-header {
